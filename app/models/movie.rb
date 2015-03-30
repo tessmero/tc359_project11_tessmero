@@ -1,5 +1,5 @@
 class Movie < ActiveRecord::Base
-  
-  validates_presence_of :title, :director, :rating
+
+validates_presence_of :title, :director
 
 end
