@@ -20,9 +20,8 @@
       <td><%= movie.director %></td>
       <td><%= movie.is_award_winning %></td>
       <td><%= movie.rating %></td>
-
+      <td><%= link_to 'Show', movie %></td>
       <% if user_signed_in? %>
-        <td><%= link_to 'Show', movie %></td>
         <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
         <td><%= link_to 'Destroy', movie, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       <% end %>
